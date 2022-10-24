@@ -29,7 +29,7 @@ typedef struct ext2_dir_entry_2 DIR;
 #define BUSY 1
 
 // file system table sizes
-#define NMINODE 100
+#define NMINODE 128
 #define NMTABLE 10
 #define NPROC 2
 #define NFD 10

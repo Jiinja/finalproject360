@@ -58,6 +58,7 @@ int fs_init()
     proc[i].status = FREE; // ready to run
     proc[i].pid = i; // pid = 0 to NPROC-1
     proc[i].uid = i; // P0 is a superuser process
+    proc[i].cwd = 0;
   for (j=0; j<NFD; j++)
     proc[i].fd[j] = 0; // all file descriptors are NULL
     proc[i].next = &proc[i+1];
